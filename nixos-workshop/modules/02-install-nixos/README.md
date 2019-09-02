@@ -129,17 +129,17 @@ will contain our root and swap partitions.
 
 This code block assumes you’re still at a `fdisk` prompt.
 
-You can just choose 'p' for primary partition.
-
 ```bash
 # Create the boot partition
 Command: n
+Partition type: p -- primary partition
 Partition number: 1
 First sector: <enter for default>
 Last sector: +1G       --  make a 1 gigabyte partition
 
 # Create the LVM partition
 Command: n
+Partition type: p -- primary partition
 Partition number: 2
 First sector: <enter for default>
 Last sector: <enter for default - rest of disk>
